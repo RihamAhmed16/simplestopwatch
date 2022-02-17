@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#483F57"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="423dp"
+        android:layout_height="473dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageButton
+            android:id="@+id/btn_img"
+            android:layout_width="358dp"
+            android:layout_height="397dp"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="57dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="19dp"
+            android:background="@drawable/circle2"
+            android:contentDescription="@string/link"
+            app:srcCompat="@drawable/circle" />
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="169dp"
+            android:layout_height="57dp"
+            android:layout_alignStart="@+id/btn_img"
+            android:layout_alignBottom="@+id/btn_img"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="94dp"
+            android:layout_marginTop="188dp"
+            android:layout_marginBottom="207dp"
+            android:format="00:00"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+
+
+        <Button
+            android:id="@+id/Start"
+            style="@android:style/Animation"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignStart="@+id/btn_img"
+            android:layout_alignEnd="@+id/btn_img"
+            android:layout_alignBottom="@+id/btn_img"
+            android:layout_marginStart="145dp"
+            android:layout_marginEnd="145dp"
+            android:layout_marginBottom="143dp"
+            android:background="@drawable/background"
+            android:fontFamily="@font/amita_bold"
+            android:onClick="startchronometer"
+            android:text="@string/Start"
+            android:textColor="#030004"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/reset"
+            style="@android:style/Animation"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/holo_purple"
+            android:fontFamily="@font/amita_bold"
+            android:gravity="center"
+            android:onClick="resetchronometer"
+            android:text="@string/Reset"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/pause"
+            style="@android:style/Animation"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+            android:background="@drawable/background"
+            android:fontFamily="@font/amita_bold"
+            android:onClick="pauschronometer"
+            android:text="@string/pause"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Lap"
+            style="@android:style/Animation"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/holo_purple"
+            android:fontFamily="@font/amita_bold"
+            android:onClick="resetchronometer"
+            android:text="@string/Lap"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

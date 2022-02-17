@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">simple stopwatch</string>
+    <string name="tod">TODO</string>
+    <string name="Start">Start</string>
+    <string name="pause">pause</string>
+    <string name="Reset">reset</string>
+    <string name="Lap">lap</string>
+    <string name="img">line</string>
+    <string name="link">link</string>
+</resources>
